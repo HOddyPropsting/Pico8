@@ -33,7 +33,7 @@ can not move down, and one of the map tiles it is over is full, then it
 will game-over. It will not game-over if it goes above the top of the 
 map.
 
-##Snek
+## Snek
 
 ![](snek/snek.p8.png)
 
