@@ -1,6 +1,9 @@
 pico-8 cartridge // http://www.pico-8.com
 version 16
 __lua__
+-- snek
+-- by henry oddy-propsting
+
 -- 0=⬅️,1=➡️,2=⬆️,3=⬇️
 
 snek = {
@@ -107,12 +110,12 @@ function _update60()
  if game_over then
   if btnp(4) or btnp(5) then
    game_over = false
-   snek = {
-		   x=8
-			, y=8
-			, d=0
-			, tail = {{x=9,y=8,d=0}}
-			}
+   snek = { x=8
+          , y=8
+          , d=0
+          , tail = {{x=9,y=8,d=0}}
+          }
+   next_d = 0
   end
   return
  end
